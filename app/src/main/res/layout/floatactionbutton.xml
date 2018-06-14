@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--填充颜色默认是colorAccent-->
+    <!--app:backgroundTint设置背景填充色-->
+    <!--android:elevation设置正常状态的阴影大小-->
+    <!--app:pressedTranslationZ设置点击时阴影的大小-->
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        android:elevation="3dp"
+        android:src="@mipmap/ic_launcher"
+        app:backgroundTint="#3f51b5"
+        app:pressedTranslationZ="6dp" />
+</RelativeLayout>

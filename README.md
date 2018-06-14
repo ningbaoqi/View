@@ -7,3 +7,5 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/snackbar.gif)
 ### 使用TextInputLayout
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/textinputlayout.gif)
+### 使用FloatingActionButton
+![image](https://github.com/ningbaoqi/View/blob/master/gif/floatactionbutton.gif)
