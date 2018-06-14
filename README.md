@@ -21,3 +21,5 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/toast.gif)
 ### 使用SeekBar
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/seekbar.gif)
+### 使用TimePicker
+![image](https://github.com/ningbaoqi/View/blob/master/gif/timepicker.gif)
