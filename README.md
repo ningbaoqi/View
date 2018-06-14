@@ -13,3 +13,5 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/TabLayout.gif)
 ### 使用NavigationView
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/navigationview.gif)
+### 使用CoordinatorLayout
+![image](https://github.com/ningbaoqi/View/blob/master/gif/CoordinatorLayout.gif)
