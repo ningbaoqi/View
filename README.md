@@ -17,3 +17,5 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/CoordinatorLayout.gif)
 ### 使用CollapsingToolbarLayout
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/CollapsingToolbarLayout.gif)
+### 使用Toast
+![image](https://github.com/ningbaoqi/View/blob/master/gif/toast.gif)
