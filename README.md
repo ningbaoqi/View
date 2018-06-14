@@ -5,3 +5,5 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/toolbar.gif)
 ### 使用SnackBar
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/snackbar.gif)
+### 使用TextInputLayout
+![image](https://github.com/ningbaoqi/View/blob/master/gif/textinputlayout.gif)
