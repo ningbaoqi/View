@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CardViewActivity">
+    <!--cardCornerRadius="20dp"设置圆角半径-->
+    <!--cardElevation="12dp"设置阴影的半径-->
+    <!--cardBackgroundColor="@color/cardview_dark_background"设置背景色-->
+    <!--cardMaxElevation="@dimen/cardview_compat_inset_shadow"设置Z轴最大高度值-->
+    <!--cardUseCompatPadding="true"是否使用CompadPadding-->
+    <!--cardPreventCornerOverlap="true"是否使用PreventCornerOverlap-->
+    <!--contentPadding="@dimen/cardview_compat_inset_shadow"内容的padding-->
+    <!--contentPaddingLeft="@dimen/cardview_compat_inset_shadow"内容的左padding-->
+    <!--contentPaddingTop="@dimen/cardview_compat_inset_shadow"内容的上padding-->
+    <!--contentPaddingBottom="@dimen/cardview_compat_inset_shadow"内容的下padding-->
+    <!--contentPaddingRight="@dimen/cardview_compat_inset_shadow"内容的右padding-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/tv_item"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/ic_launcher"
+            android:scaleType="centerInside" />
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <SeekBar
+            android:id="@+id/sb1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="控制圆角大小" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <SeekBar
+            android:id="@+id/sb2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="控制阴影大小" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <SeekBar
+            android:id="@+id/sb3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="控制图片间距" />
+    </LinearLayout>
+</LinearLayout>
