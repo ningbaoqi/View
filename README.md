@@ -19,3 +19,5 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/CollapsingToolbarLayout.gif)
 ### 使用Toast
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/toast.gif)
+### 使用SeekBar
+![image](https://github.com/ningbaoqi/View/blob/master/gif/seekbar.gif)
