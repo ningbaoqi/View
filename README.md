@@ -9,3 +9,5 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/textinputlayout.gif)
 ### 使用FloatingActionButton
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/floatactionbutton.gif)
+### 使用TabLayout
+![image](https://github.com/ningbaoqi/View/blob/master/gif/TabLayout.gif)
