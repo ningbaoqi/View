@@ -15,3 +15,5 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/navigationview.gif)
 ### 使用CoordinatorLayout
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/CoordinatorLayout.gif)
+### 使用CollapsingToolbarLayout
+![image](https://github.com/ningbaoqi/View/blob/master/gif/CollapsingToolbarLayout.gif)
