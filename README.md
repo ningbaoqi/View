@@ -33,3 +33,5 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/spinner.gif)autocompletetextview.gif
 ### 使用AutoCompleteTextView
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/autocompletetextview.gif)
+### 使用GridView
+![image](https://github.com/ningbaoqi/View/blob/master/gif/gridview.gif)
