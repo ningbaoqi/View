@@ -45,3 +45,5 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/dialog.gif)
 ### 使用TimePickerDialog
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/TimePickerDialog.gif)
+### 使用ProgressBar
+![image](https://github.com/ningbaoqi/View/blob/master/gif/progressbar.gif)
