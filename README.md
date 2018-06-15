@@ -27,3 +27,5 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/scrollview.gif)
 ### 使用OptionMenu
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/optionmenu.gif)
+### 使用ContextMenu
+![image](https://github.com/ningbaoqi/View/blob/master/gif/contextmenu.gif)
