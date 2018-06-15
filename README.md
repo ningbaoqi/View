@@ -51,3 +51,5 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/MultiAutoCompleteTextView.gif)
 ### 跑马灯
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/marqueetext.gif)
+### 手势
+![image](https://github.com/ningbaoqi/View/blob/master/gif/guesture.gif)
