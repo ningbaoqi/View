@@ -57,3 +57,5 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/viewflipper.gif)
 ### 使用TabHost
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/tabhost.gif)
+### 使用Gallery&ImageSwitcher
+![image](https://github.com/ningbaoqi/View/blob/master/gif/gallery.gif)
