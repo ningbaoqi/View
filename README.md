@@ -25,3 +25,5 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/timepicker.gif)
 ### 使用ScrollView
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/scrollview.gif)
+### 使用OptionMenu
+![image](https://github.com/ningbaoqi/View/blob/master/gif/optionmenu.gif)
