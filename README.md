@@ -53,5 +53,7 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/marqueetext.gif)
 ### 手势
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/guesture.gif)
-### ViewFlipper
+### 使用ViewFlipper
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/viewflipper.gif)
+### 使用TabHost
+![image](https://github.com/ningbaoqi/View/blob/master/gif/tabhost.gif)
