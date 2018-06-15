@@ -29,3 +29,5 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/optionmenu.gif)
 ### 使用ContextMenu
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/contextmenu.gif)
+### 使用Spinner
+![image](https://github.com/ningbaoqi/View/blob/master/gif/spinner.gif)
