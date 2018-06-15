@@ -35,3 +35,5 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/autocompletetextview.gif)
 ### 使用GridView
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/gridview.gif)
+### 使用ActionBar
+![image](https://github.com/ningbaoqi/View/blob/master/gif/actionbar.gif)
