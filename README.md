@@ -39,3 +39,5 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/actionbar.gif)
 ### 使用DatePicker
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/datepicker.gif)
+### 使用DatePickerDialog
+![image](https://github.com/ningbaoqi/View/blob/master/gif/datepickerdialog.gif)
