@@ -49,3 +49,5 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/progressbar.gif)
 ### 使用MultiAutoCompleteTextView
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/MultiAutoCompleteTextView.gif)
+### 跑马灯
+![image](https://github.com/ningbaoqi/View/blob/master/gif/marqueetext.gif)
