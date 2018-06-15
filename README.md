@@ -43,3 +43,5 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/datepickerdialog.gif)
 ### 使用Dialog
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/dialog.gif)
+### 使用TimePickerDialog
+![image](https://github.com/ningbaoqi/View/blob/master/gif/TimePickerDialog.gif)
