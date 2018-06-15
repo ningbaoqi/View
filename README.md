@@ -53,3 +53,5 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/marqueetext.gif)
 ### 手势
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/guesture.gif)
+### ViewFlipper
+![image](https://github.com/ningbaoqi/View/blob/master/gif/viewflipper.gif)
