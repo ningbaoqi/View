@@ -11,3 +11,5 @@
 [GestureDetector](https://github.com/ningbaoqi/View/commit/939aec39e45701f0ef3543d19423e097dbca5be5)
 ### Scroller
 [Scroller](https://github.com/ningbaoqi/View/commit/a59510903ee7daa1cccfe105656b977bf6169457)
+### View的滑动
+[View的滑动](https://github.com/ningbaoqi/View/blob/master/README-huadong.md)
