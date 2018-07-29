@@ -8,7 +8,7 @@
 |重要参数|说明|
 |-------|-------|
 |`ViewGroup.LayoutParams`|属性值|
-|`MeasureSpec`|测量规格，32位的整数值，前两位是测量模式，后30位是测量规格的大小|
+|`MeasureSpec`|测量规格，32位的整数值，前两位是测量模式，后30位是测量规格的大小;测量模式：EXACTLY：表示明确的值，如100dp，match_parent，在测量的时候直接使用就可以了；UNSPECIFIED：表示没有限制，表示这个View要多大都可以，该属性主要使用在ScrollView、ListView；AT_MOST：表示至多不能超多某个值，如wrap_content，由该控件的内容决定的大小，并且不能超过父控件|
 
 + `实现测量逻辑的方法`；
 #### 二、onLayout
