@@ -16,3 +16,6 @@
 
 #### 事件分发流程
 + `Activity->PhoneWindow->DecorView->ViewGroup->....->View`；`如果事件一直没有被处理，将会将该事件反转回传，最终传送到Activity`；`如果最后Activity还是没有处理，这个事件将会被抛弃`；
+
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic-11.jpg)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic-12.jpg)
