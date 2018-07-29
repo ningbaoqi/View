@@ -7,3 +7,5 @@
 
 ### VelocityTracker
 [VelocityTracker](https://github.com/ningbaoqi/View/commit/f2411f57d43487692b5c4be041589e6d23a7d261)
+### GestureDetector
+[GestureDetector](https://github.com/ningbaoqi/View/commit/f2411f57d43487692b5c4be041589e6d23a7d261)
