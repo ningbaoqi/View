@@ -31,3 +31,13 @@
 ```
 ObjectAnimator.ofFloat(targetView,"translationX" , 0 , 100).setDuration(200).start();
 ```
+
+#### 改变布局参数
+
+```
+MarginLayoutParams params = mButton.getLayoutParams();
+params.width += 100；
+params.leftMargin += 100;
+mButton.requestLayout();
+//或者mButton.setLayoutParams(params);
+```
