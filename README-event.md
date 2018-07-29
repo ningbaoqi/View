@@ -6,4 +6,4 @@
 + 需要注意的是：View在平移的过程中，top和left表示的是原始左上角的坐标信息，其值并不会发生改变，此时发生改变的是x、y、translationX、translationY这四个参数；
 
 ### VelocityTracker
-[VelocityTracker](https://github.com/ningbaoqi/View/blob/master/README-event.md)
+[VelocityTracker](https://github.com/ningbaoqi/View/commit/f2411f57d43487692b5c4be041589e6d23a7d261)
