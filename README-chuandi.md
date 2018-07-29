@@ -30,3 +30,19 @@
 + 一、`单击事件onClickListener`：`需要两个事件才能触发：Action down 、Action up`；二、`长按事件onLongClickListener`；三、`触摸事件onTouchListener`；四、`View自身处理onTouchEvent`：`是一种默认的处理方式`；
 #### View的事件分发：view的四个相关方法调用顺序
 + `onTouchListener`->`onTouchEvent`->`onLongClickListener`->`onClickListener`;
+
+#### 事件传递机制结论
+
+|事件传递机制结论|
+|------|
+|同一个事件序列是指从手指解除屏幕的那一刻起，到手指离开屏幕的那一刻结束，在这个过程中所产生的一系列事件，这个事件序列以down事件开始，中间含有数量补丁move事件，最终以up事件结束|
+|正常情况下，一个事件序列只能被一个View拦截并消耗，因为一旦一个元素拦截了此事件，那么同一个事件序列内的所有事件都会直接交给它处理，因此同一个事件序列中的事件不能分别由两个View同时处理，但是通过特殊手段可以做到，如：一个View将本该自己处理的事件通过onTouchEvent方法强行传递给其他View处理|
+|某个View一旦决定拦截，那么这一个事件序列都只能由它来处理，并且它的onInterceptTouchEvent不会再被调用|
+|某个View一旦开始处理事件，如果它不消耗掉action_down事件(onTouchEvent返回false)，那么同一事件序列中的其他事件都不会再交给它处理，并且事件将重新交给它的父元素去处理，即父元素的onTouchEvent会被调用|
+|如果View不消耗除了action_down以外的事件，那么这个点击事件会消失，此时父元素的onTouchEvent并不会被调用，并且当前View可以持续收到后续的事件，最终这些小事的事件会传递给activity处理|
+|ViewGroup默认不拦截任何事件|
+|View没有onInterceptTouchEvent方法，一旦由点击事件传递给它，那么它的onTouchEvent方法就会被调用|
+|View的OnTouchEvent方法默认会消耗事件(返回true)，除非它是不可点击的clickable和longClickable同时为false|
+|View的enable属性不影响onTouchEvent的默认返回值。哪怕一个View是disable状态的，只要它的clickable或者longClickable有一个为true，那么它的onTouchEvent就返回true|
+|onClick会发生再前提是当前View是可点击的，并且它收到了down和up的事件|
+|事件传递过程是由外向内的，即事件总是传递给父元素，然后再由父元素分发给子View，通过requestDisallowInterceptTouchEvent分发可以在子View中干预父元素的事件分发q过程。但是action_down事件除外|
