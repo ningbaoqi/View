@@ -19,3 +19,14 @@
 
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/pic-11.jpg)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/pic-12.jpg)
+
+#### ViewGroup中可能有多个childView，如何判断应该分配给哪一个？
++ `只要把所有的子View全部遍历一下，如果手指触摸的点在你所在的childView区域上，就将事件传递给该childView`‘；
+#### 当该点的childView有重叠时应该如何分配？
++ `当childview重叠的时候一般会分配给显示在最上面的childview`；`跟android的渲染机制有关系`；
+#### view的事件分发：view为什么会有dispatchTouchEvent方法？
++ `View可以注册很多事件监听器如onClick、onLongClick、onTouch等`；
+#### view的事件分发：view的四个相关方法
++ 一、`单击事件onClickListener`：`需要两个事件才能触发：Action down 、Action up`；二、`长按事件onLongClickListener`；三、`触摸事件onTouchListener`；四、`View自身处理onTouchEvent`：`是一种默认的处理方式`；
+#### View的事件分发：view的四个相关方法调用顺序
++ `onTouchListener`->`onTouchEvent`->`onLongClickListener`->`onClickListener`;
