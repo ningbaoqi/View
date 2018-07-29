@@ -18,4 +18,4 @@
 ##### invalidate()
 + `请求Android系统，如果视图大小没有发生变化，就不会调用onLayout()方法`；
 ##### requestLayout()
-+ `当布局发生变化的时候，如方向发生变化或尺寸发生变化，就要调用requestLayout()方法，重新测量，摆放，但是不会调用onDraw()方法`；
++ `当布局发生变化的时候，如方向发生变化或尺寸发生变化，就要调用requestLayout()方法，重新测量，摆放，但是不会调用onDraw()`；
