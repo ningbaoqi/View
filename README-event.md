@@ -13,3 +13,5 @@
 [Scroller](https://github.com/ningbaoqi/View/commit/a59510903ee7daa1cccfe105656b977bf6169457)
 ### View的滑动
 [View的滑动](https://github.com/ningbaoqi/View/blob/master/README-huadong.md)
+### View的事件传递机制
+[View的事件传递机制](https://github.com/ningbaoqi/View/blob/master/README-chuandi.md)
