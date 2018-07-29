@@ -15,3 +15,5 @@
 [View的滑动](https://github.com/ningbaoqi/View/blob/master/README-huadong.md)
 ### View的事件传递机制
 [View的事件传递机制](https://github.com/ningbaoqi/View/blob/master/README-chuandi.md)
+### View滑动冲突
+[View滑动冲突](https://github.com/ningbaoqi/View/blob/master/README-chongtu.md)
