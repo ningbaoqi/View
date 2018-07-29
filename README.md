@@ -1,5 +1,7 @@
 ### View的事件传递机制
 [View的事件传递机制](https://github.com/ningbaoqi/View/blob/master/README-event.md)
+### View的绘制机制
+[View的绘制机制](https://github.com/ningbaoqi/View/blob/master/README-huizhi.md)
 ### 使用CardView
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/cardview.gif)
 ### 使用ToolBar
