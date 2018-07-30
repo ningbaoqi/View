@@ -35,6 +35,9 @@
          startActivity(intent);
      }
 ```
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic-70.gif)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic-71.gif)
+
 ### 使用WebView加载HTML代码
 + WebView提供了一个`loadData(String data , String mimeType , String encoding)`方法，该方法`可用于加载并显示HTML代码`，但在实际使用过程中`当它加载包含中文的HTML内容时`，`WebView将会显示乱码`；好在WebView提供了一个`loadDataWithBaseURL(String baseUrl , String data , String mimetype , String encoding , String historyUrl)`方法，该方法是loadData(String data , String mimetype , String encoding)方法的增强版，`它不会产生乱码`。关于该方法的几个参数简单说明如下：
 
