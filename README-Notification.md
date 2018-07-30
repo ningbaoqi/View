@@ -42,6 +42,7 @@ public class NotificationActivity extends AppCompatActivity {
      }
 }
 ```
+![image](https://github.com/ningbaoqi/View/blob/master/gif/notification.gif)
 ### Android8.0发送普通通知
 ```
 public class MainActivity extends AppCompatActivity {
