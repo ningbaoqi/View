@@ -63,3 +63,22 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/tabhost.gif)
 ### 使用Gallery&ImageSwitcher
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/gallery.gif)
+### ListView
+##### ListView的RecycleBin机制
++ `ListView的RecycleBin机制`就是`AbsListView中的内部类`;
+##### RecycleBin的重要成员变量
+
+|RecycleBin的重要成员变量|说明|
+|------|------|
+|`private View[] mActiveViews = new View[0]`|存储的是活动的View即可见的View|
+|`private ArrayList<View>[] mScrapViews`|其实就是一个二维数组，表示的是所有废弃View的List就是说当View在滑动的时候滑出去了|
+|`ArrayList<View> mCurrentScrap`|表示的是当前废弃View的List|
+
+##### RecycleBin的重要成员函数
+
+|RecycleBin的重要成员函数|说明|
+|------|------|
+|`public void setViewTypeCount(int viewTypeCount)`|为ListView中的每一个类型的数据项，建立一个RecycleBin机制|
+|`void fillActiveViews(int childCount, int firstActivePosition)`|根据参数将ListView中指定的元素存储到mActiveViews数组当中|
+|`View getActiveView(int position)`|获取想要在屏幕上显示的View|
+|`void addScrapView(View scrap, int position)`|将废弃View进行缓存的方法|
