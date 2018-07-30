@@ -161,3 +161,6 @@ webView.loadDataWithBaseURL(null, stringBuilder.toString(), "text/html", "utf-8"
             android:layout_height="match_parent"></WebView>
     </LinearLayout>
 ```
+
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic-73.gif)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic-74.gif)
