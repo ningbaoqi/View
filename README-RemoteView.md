@@ -27,4 +27,4 @@ private void sendCustomNotification() {
 }
 ```
 ### RemoteViews实现桌面小部件
-[RemoteViews实现桌面小部件](https://github.com/ningbaoqi/View/blob/master/README-system.md)
+[RemoteViews实现桌面小部件](https://github.com/ningbaoqi/View/commit/aacd416426e52b6cdd10cd5992ce71a377587851)
