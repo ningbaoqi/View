@@ -53,7 +53,7 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/MultiAutoCompleteTextView.gif)
 ### [跑马灯](https://github.com/ningbaoqi/View/commit/47dd40a04800dbcaf513768d705744803fdf9e42)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/marqueetext.gif)
-### 手势
+### [手势](https://github.com/ningbaoqi/View/commit/e52e0887553a0576074f9f6997747c62a0132850)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/guesture.gif)
 ### 使用ViewFlipper
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/viewflipper.gif)
