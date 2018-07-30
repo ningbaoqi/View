@@ -62,7 +62,7 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/tabhost.gif)
 ### [使用Gallery&ImageSwitcher](https://github.com/ningbaoqi/View/commit/8cdc071669cb822952e83240c293278f20021816)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/gallery.gif)
-### ListView
+### [ListView](https://github.com/ningbaoqi/View/commit/7207f981a95da738d5348b083410959167c3f3e3)
 ##### ListView的RecycleBin机制
 + `ListView的RecycleBin机制`就是`AbsListView中的内部类`;
 ##### RecycleBin的重要成员变量
@@ -82,9 +82,9 @@
 |`View getActiveView(int position)`|获取想要在屏幕上显示的View|
 |`void addScrapView(View scrap, int position)`|将废弃View进行缓存的方法|
 
-#### [ListView使用ArrayAdapter]()
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/pic-60.gif)
-
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic-61.gif)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic-62.gif)
 ### ViewPager
 
 |FragmentPagerAdapter与FragmentStatePagerAdapter区别|
