@@ -58,3 +58,92 @@ stringBuilder.append("</html>");
 //加载并显示HTML代码
 webView.loadDataWithBaseURL(null, stringBuilder.toString(), "text/html", "utf-8", null);
 ```
+
+### 打造自己的浏览器
+```
+    <uses-permission android:name="android.permission.INTERNET" />
+```
+```
+    public class WebViewActivity extends AppCompatActivity {
+        private WebView webview;
+        private Uri uri = Uri.parse("http://www.baidu.com");
+        @Override
+        protected void onCreate(@Nullable Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.webview_layout);
+            init();
+        }
+        private void init() {
+            webview = (WebView) findViewById(R.id.webview);
+            webview.loadUrl(String.valueOf(uri));//只是这一句话，还是会使用系统安装的浏览器
+            //webview.loadUrl("file:///android_asset/xx.html");//加载本地文件使用该方法，本地文件存放在assets文件夹
+            //webview.requestFocus();//使页面获得焦点
+            /**
+             * 要使得加载的页面在WebView中显示需要使用下面方法
+             * */
+            webview.setWebViewClient(new WebViewClient() {
+                @Override
+                public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                    //返回true的时候控制页面在WebView中打开，如果返回false调用系统浏览器或第三方浏览器显示
+                    view.loadUrl(url);
+                    return true;
+                }
+            });
+            /**
+             * 如果想在加载的Web页面使用JavaScript，需要使用下列方法
+             * */
+            WebSettings settings = webview.getSettings();
+            settings.setJavaScriptEnabled(true);
+            /**
+             * 优先使用缓存
+             * */
+            settings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
+            /**
+             * 添加进度控制
+             * */
+            webview.setWebChromeClient(new WebChromeClient() {
+                private ProgressDialog dialog;
+                @Override
+                public void onProgressChanged(WebView view, int newProgress) {
+                    if (newProgress == 100) {
+                        closeDialog();
+                    } else {
+                        openDialog(newProgress);
+                    }
+                }
+                private void closeDialog() {
+                    if (dialog != null && dialog.isShowing()) {
+                        dialog.dismiss();
+                        dialog = null;
+                    }
+                }
+                private void openDialog(int newProgress) {
+                    if (dialog == null) {
+                        dialog = new ProgressDialog(WebViewActivity.this);
+                        dialog.setTitle("正在加载....");
+                        dialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+                        dialog.setProgress(newProgress);
+                        dialog.show();
+                    } else {
+                        dialog.setProgress(newProgress);
+                    }
+                }
+            });
+        }
+        /**
+         * 通过goBack方法或goForward方法向后向前访问已经访问的过的站点 ， webview的其他方法如：zoomIn放大网页,zoomOut缩小网页
+         * */
+        @Override
+        public boolean onKeyDown(int keyCode, KeyEvent event) {
+            if (keyCode == KeyEvent.KEYCODE_BACK) {
+                if (webview.canGoBack()) {
+                    webview.goBack();
+                    return true;
+                } else {
+                    System.exit(0);
+                }
+            }
+            return false;
+        }
+    }
+```
