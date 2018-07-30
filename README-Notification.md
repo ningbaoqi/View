@@ -85,3 +85,43 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 ```
+### Android8.0发送带进度条的通知
+```
+/**
+  * 设置带进度条的通知
+  */
+ private void sendProgressNotification() {
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+        NotificationChannel channel = new NotificationChannel("channel_id", "channel_name", NotificationManager.IMPORTANCE_DEFAULT);//创建通知渠道
+        channel.canBypassDnd();//可否绕过请勿打扰模式
+        channel.enableLights(true);//闪光
+        channel.setLockscreenVisibility(VISIBILITY_SECRET);//锁屏显示通知
+        channel.setLightColor(Color.argb(100, 100, 100, 100));//指定闪光时的灯光颜色
+        channel.canShowBadge();//桌面launcher消息角标
+        channel.enableVibration(true);//是否可以震动
+        channel.getAudioAttributes();//获取系统通知响铃声音的配置
+        channel.getGroup();//获取通知渠道组
+        channel.setBypassDnd(true);//设置可以绕过，请勿打扰模式
+        channel.setVibrationPattern(new long[]{100, 100, 200});//震动的模式
+        channel.shouldShowLights();//是否会显示闪光
+        getManager().createNotificationChannel(channel);//让通知服务知道有这么个渠道
+    }
+    final Notification.Builder builder = new Notification.Builder(this).setAutoCancel(true).setChannelId("channel_id").setContentTitle("新消息来了").setContentText("明天是周六不上班好开心").setSmallIcon(R.mipmap.ic_launcher).setDefaults(Notification.FLAG_ONLY_ALERT_ONCE);
+    getManager().notify(2, builder.build());
+    new Thread(new Runnable() {
+         @Override
+         public void run() {
+            for (int i = 0; i < 100; i++) {
+                try {
+                     Thread.sleep(1000);
+                     builder.setDefaults(Notification.FLAG_ONLY_ALERT_ONCE);
+                     builder.setProgress(100, i, false);
+                     getManager().notify(2, builder.build());
+                } catch (InterruptedException e) {
+                     e.printStackTrace();
+                }
+             }
+         }
+    }).start();
+}
+```
