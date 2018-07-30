@@ -31,7 +31,7 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/optionmenu.gif)
 ### [使用ContextMenu](https://github.com/ningbaoqi/View/commit/3c211a3ea7308c5270db1114818e096df196f6ae)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/contextmenu.gif)
-### 使用Spinner
+### [使用Spinner](https://github.com/ningbaoqi/View/commit/d6d56f2fb8a4f42bf3e8e536120a8944a9b65dc5)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/spinner.gif)
 ### 使用AutoCompleteTextView
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/autocompletetextview.gif)
