@@ -174,3 +174,12 @@ protected void onCreate(Bundle savedInstanceState) {
 }
 ```
 + 未实现;
+### Android8.0删除通知
+```
+findViewById(R.id.delete_notification).setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        getManager().cancel(3);
+    }
+});
+```
