@@ -125,3 +125,26 @@ public class MainActivity extends AppCompatActivity {
     }).start();
 }
 ```
+### 折叠式Notification
+```
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    Notification.Builder builder = new Notification.Builder(this);
+    Intent intent = new Intent(this , MainActivity.class);
+    PendingIntent intent1 = PendingIntent.getActivity(this, 0, intent, 0);
+    builder.setContentIntent(intent1);
+    builder.setSmallIcon(R.mipmap.ic_launcher_round);
+    builder.setLargeIcon(BitmapFactory.decodeResource(getResources(),R.mipmap.ic_launcher_round));
+    builder.setAutoCancel(true);
+    builder.setContentTitle("折叠式同志");
+    //用remoteviews来创建自定义的Norification
+    RemoteViews remoteViews1 = new RemoteViews(getPackageName() , R.layout.view_fold);
+    Notification notification = builder.build();
+    //使用展开时的试图
+    notification.bigContentView =  remoteViews1;
+    ((NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE)).notify(1 , notification);
+}
+```
++ 未实现;
