@@ -47,7 +47,7 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/dialog.gif)
 ### [使用TimePickerDialog](https://github.com/ningbaoqi/View/commit/d9670d1c4c5f30bedc9d194bbfaa7334757cecd2)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/TimePickerDialog.gif)
-### 使用ProgressBar
+### [使用ProgressBar](https://github.com/ningbaoqi/View/commit/da4578236ded40a96335d1c16778d5ecc637db09)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/progressbar.gif)
 ### 使用MultiAutoCompleteTextView
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/MultiAutoCompleteTextView.gif)
