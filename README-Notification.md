@@ -183,3 +183,5 @@ findViewById(R.id.delete_notification).setOnClickListener(new View.OnClickListen
     }
 });
 ```
+### PendingIntent
+[PendingIntent](https://github.com/ningbaoqi/View/blob/master/README-PendingIntent.md)
