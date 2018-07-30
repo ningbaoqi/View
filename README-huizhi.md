@@ -25,7 +25,7 @@
 #### 解决方法一
 
 ```
-/**
+ /**
   * View已经初始化完毕了，宽/高已经准备好了，获取宽/高没有问题；但是该方法会被调用很多次，当Activity的窗口得到焦点和失去焦点时均会被调用一次，当Activity继续执行和暂停执行时，该方法也会被调用
   *
   * @param hasFocus
@@ -42,7 +42,7 @@
 #### 解决方法二
 
 ```
-/**
+ /**
   * 在Looper调用此runnable的时候，View已经初始化好了
   */
   @Override
@@ -57,4 +57,23 @@
       });
   }
 ```
+#### 解决方法三
 
+```
+ /**
+  * 当View树的状态发生变化的时候或者View树内部的View的可见性发生改变的时候，onGlobalLayout方法将会被调用，因此这是获取View的宽 高的一个很好的时机，需要注意的是，伴随着View树的状态改变等，onGlobalLayout方法会被调用多次
+  */
+  @Override
+  protected void onStart() {
+      super.onStart();
+      ViewTreeObserver observer = recyclerView.getViewTreeObserver();
+      observer.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+          @Override
+          public void onGlobalLayout() {
+              recyclerView.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+              int width = recyclerView.getMeasuredWidth();
+              int height = recyclerView.getMeasuredHeight();
+          }
+      });
+  }
+```
