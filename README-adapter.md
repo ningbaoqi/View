@@ -21,3 +21,35 @@
 |xhdpi|240dpi~320dpi|
 |xxhdpi|320dpi~480dpi|
 |xxxhdpi|480dpi~640dpi|
+
+### 屏幕适配
+#### 注意weight的计算方法
+#### 使用限定符
+##### 布局限定
++ `res/layout/main.xml`；`res/layout-large/main.xml`；在Android3.2之前起作用；在3.2之后不用；`res/layout-sw600dp/main.xml(最小宽度边为600dp以上使用的布局)`；
+```
+//使用布局别名
+res/layout/main.xml 单面板
+res/layout/main_twopanes.xml双面板
+
+//默认布局
+res/values/layout.xml
+<resources>
+    <item name="mian" type="layout">@layout/main</item>
+</resources>
+
+//Android3.2之前的平板电脑
+res/values-large/layout.xml
+<resources>
+    <item name="mian" type="layout">@layout/main_twopanes</item>
+</resources>
+
+//Android3.2之后的平板布局
+res/values-sw600dp/layout.xml
+<resources>
+    <item name="mian" type="layout">@layout/main_twopanes</item>
+</resources>
+
+//使用布局
+setContentView(R.layout.main)
+```
