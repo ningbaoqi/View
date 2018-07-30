@@ -77,3 +77,9 @@
       });
   }
 ```
+
+#### 解决方式四
+
+```
+view.measure(int widthMeasureSpec,int heightMeasureSpec);//通过手动对View进行measure来得到Ｖiew的宽/高；
+```
