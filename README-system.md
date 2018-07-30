@@ -105,3 +105,5 @@
         public void onPageScrollStateChanged(int state) {}
     });
 ```
+#### [ViewPager使用PagerAdapter](https://github.com/ningbaoqi/View/commit/ca102b96be9ff5fa8b2fa9d3005ee0bb7f972d06)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic-63.gif)
