@@ -19,3 +19,23 @@
 + `请求Android系统，如果视图大小没有发生变化，就不会调用onLayout()方法`；
 ##### requestLayout()
 + `当布局发生变化的时候，如方向发生变化或尺寸发生变化，就要调用requestLayout()方法，重新测量，摆放，但是不会调用onDraw()`；
+
+### Activity和View的问题
++ Activity和View的绘制过程不是同步进行的，所以有可能在Activity的onCreate、onStart、onResume方法中无法获取View的宽高；
+#### 解决方法一
+
+```
+/**
+  * View已经初始化完毕了，宽/高已经准备好了，获取宽/高没有问题；但是该方法会被调用很多次，当Activity的窗口得到焦点和失去焦点时均会被调用一次，当Activity继续执行和暂停执行时，该方法也会被调用
+  *
+  * @param hasFocus
+  */
+  @Override
+  public void onWindowFocusChanged(boolean hasFocus) {
+      super.onWindowFocusChanged(hasFocus);
+      if (hasFocus) {
+          int width = recyclerView.getMeasuredWidth();
+          int height = recyclerView.getMeasuredHeight();
+      }
+  }
+```
