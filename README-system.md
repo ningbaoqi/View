@@ -55,7 +55,7 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/marqueetext.gif)
 ### [手势](https://github.com/ningbaoqi/View/commit/e52e0887553a0576074f9f6997747c62a0132850)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/guesture.gif)
-### 使用ViewFlipper
+### [使用ViewFlipper](https://github.com/ningbaoqi/View/commit/b514d396dab5b03992d6799929874ced99fb89d0)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/viewflipper.gif)
 ### 使用TabHost
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/tabhost.gif)
