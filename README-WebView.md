@@ -17,3 +17,10 @@
 |`webview`会关联一个`Activity`，而`webview操作是在新的线程当中，导致Activity引用不能及时回收`|
 |`解决webview内存泄露问题`：`独立进程，简单暴力，不过可能涉及到进程间通信`，`大神使用最多该方法，因为webview使用完毕之后，直接干掉这个进程，不可能存在内存泄露，App主进程减少了内存容量`|
 |`解决webview内存泄露问题`：`动态添加webview，对传入webview中使用的context使用弱引用，动态添加webvie意思是布局创建个ViewGroup用来放置webview，Activity创建时add进来，在Activity停止时remove掉`|
+
+### URL&URI
+
+|标志|说明|
+|------|------|
+|URI|`uniform resource identifier`统一资源标志符；是一个相对来说更广泛的概念，URL是URI的一种，是URI命名机制的一个子集，可以说URI是抽象的，而具体要使用URL来定位资源WEB上的每一种资源如：图片，文档，视频等，这里所谓的定位指的是WEB上的资源相对于主机服务器来说，存放在服务器上的具体路径；URI一般由三部分组成：访问资源的命名机制、存放资源的主机名、资源自身的名称|
+|URL|`uniform resource location`统一资源定位符；是`internet`上用来描述信息资源文件的字符串，用在客户程序和服务器上，定位客户端连服务器所需要的信息，他不仅定位了这个信息资源，而且定位了如何找到这个资源|
