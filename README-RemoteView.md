@@ -26,3 +26,5 @@ private void sendCustomNotification() {
      getManager().notify(3, builder.build());
 }
 ```
+### RemoteViews实现桌面小部件
+[RemoteViews实现桌面小部件](https://github.com/ningbaoqi/View/blob/master/README-system.md)
