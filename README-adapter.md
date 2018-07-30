@@ -58,3 +58,6 @@ setContentView(R.layout.main)
 res/values-sw600dp-land/layouts.xml
 res/values-sw600dp-port/layouts.xml
 ```
+
+### 图片适配
++ `将图片放在匹配的文件夹中，如果放在不对应的文件夹在程序运行时将会造成内存的大量增加，所以建议使用不同的切图`;
