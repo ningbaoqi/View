@@ -35,7 +35,7 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/spinner.gif)
 ### [使用AutoCompleteTextView](https://github.com/ningbaoqi/View/commit/11a0f1d4b8ae3506413e62d481d28fa3de4ac80e)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/autocompletetextview.gif)
-### 使用GridView
+### [使用GridView](https://github.com/ningbaoqi/View/commit/1e58764c04c470ec5b77689fa54e1b7e8c389989)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/gridview.gif)
 ### 使用ActionBar
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/actionbar.gif)
