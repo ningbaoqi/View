@@ -45,7 +45,7 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/datepickerdialog.gif)
 ### [使用Dialog](https://github.com/ningbaoqi/View/commit/099b399ed90080415d001f49007578233b1789c2)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/dialog.gif)
-### 使用TimePickerDialog
+### [使用TimePickerDialog](https://github.com/ningbaoqi/View/commit/d9670d1c4c5f30bedc9d194bbfaa7334757cecd2)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/TimePickerDialog.gif)
 ### 使用ProgressBar
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/progressbar.gif)
