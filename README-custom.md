@@ -171,3 +171,58 @@ protected void onRestoreInstanceState(Parcelable state) {
     super.onRestoreInstanceState(state);
 }
 ```
+
+### 自定义ViewGroup的步骤
+#### 一、自定义属性的声明与获取
+#### 二、测量onMeasure
+
++ `测量子View的宽和高，设置自己的宽和高`;`根据子View的布局文件，为子View设置测量模式和测量值，来控制子View的大小；测量模式有三种：一、EXACTLY：精确的值，如100dp，match_parent；二、AT_MOST：wrap_content；UNSPCIFIED：想要多大就多大，很少见，一般出现在ScrollView中出现`;需要注意的是：在某些极端情况下，系统可能需要多次measure才能确定最终的测量宽/高，在这种情况下，在onMeasure方法中拿到的测量宽/高很可能是不准确的，一个比较好的习惯是在onLayout方法中获取View的测量宽/高或者最终宽/高；
+#### 三、布局onLayout
++ `决定子View的位置`；`尽可能将onMeasure中一些操作移动到此方法中，因为onMeasure可能调用很多次，而onLayout只触发一次，所以一些耗时初始化的操作，可以移动到onLayout中`；使用`requestLayout()`方法触发`onLayout执行`；
+```
+@Override
+protected void onLayout(boolean changed , int l , int t , int r , int b){
+    final int childCount = getChildCount();//获取子View的数量
+    for(int i = 0 ; i < childCount ; i++){
+        final View child = getChildAt(i);
+        if(child.getVisibility() == GONE){
+            continue;
+        }
+        left = calculatorChildLeft();//计算子View layout的左上角x坐标
+        top = calculatorChildTop();//计算子View layout的左上角y坐标
+        child.layout(left , top, left + cWidth , top + cWidth);
+    }
+}
+```
+#### 四、绘制onDraw
++ 绘制背景background.draw(canvas)->绘制自己(onDraw)->绘制children(dispatchDraw)->绘制装饰(onDrawScrollBars)
+#### 五、与用户交互onTouchEvent
+#### 六、如果要拦截子View的一些事件覆写onInterruptTouchEvent
+```
+@Override
+public boolean onInterceptTouchEvent(MotionEvent ev) {
+    int action = ev.getAction();
+    switch (action & MotionEvent.ACTION_MASK) {
+        case MotionEvent.ACTION_MOVE:
+            final int activePointerId = mActivePointerId;
+            if (activePointerId == INVALID_POINTER) {
+                break;
+            }
+            final int pointerIndex = ev.findPointerIndex(activePointerId);
+            final int y = (int) ev.getY(pointerIndex);
+            final int yDiff = Math.abs(y - mLastMotionY);
+            if (yDiff > mTouchSloo) {
+                mIsBeingDragged = true;
+                mLastMotionY = y;
+            }
+            break;
+        case MotionEvent.ACTION_DOWN:
+            break;
+        case MotionEvent.ACTION_CANCEL:
+            break;
+        case MotionEvent.ACTION_UP:
+            break;
+        return mIsBeingDragged;//返回true表示拦截，返回false表示不拦截
+    }
+}
+```
