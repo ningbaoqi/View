@@ -59,7 +59,7 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/viewflipper.gif)
 ### [使用TabHost](https://github.com/ningbaoqi/View/commit/430bb2a6fd44889044ae53b3b0a4b2734c3a4585)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/tabhost.gif)
-### 使用Gallery&ImageSwitcher
+### [使用Gallery&ImageSwitcher](https://github.com/ningbaoqi/View/commit/8cdc071669cb822952e83240c293278f20021816)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/gallery.gif)
 ### ListView
 ##### ListView的RecycleBin机制
