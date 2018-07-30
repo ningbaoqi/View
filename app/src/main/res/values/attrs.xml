@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--progress_reach_height  进度到达的高度-->
+<!--progress_reach_color  进度到达的颜色-->
+<!--progress_unreach_height  进度未到达的高度-->
+<!--progress_unreach_color  进度未到达的颜色-->
+<!--progress_text_size  进度文本的尺寸-->
+<!--progress_text_color  进度文本的颜色-->
+<!--progress_text_offset  表示文本与进度条之间的偏移量-->
+<resources>
+    <declare-styleable name="HorizontalProgressBar">
+        <attr name="progress_reach_height" format="dimension"/>
+        <attr name="progress_reach_color" format="color"/>
+        <attr name="progress_unreach_height" format="dimension"/>
+        <attr name="progress_unreach_color" format="color"/>
+        <attr name="progress_text_size" format="dimension"/>
+        <attr name="progress_text_color" format="color"/>
+        <attr name="progress_text_offset" format="dimension"/>
+    </declare-styleable>
+</resources>
