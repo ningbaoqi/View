@@ -53,3 +53,8 @@ res/values-sw600dp/layout.xml
 //使用布局
 setContentView(R.layout.main)
 ```
+```
+//使用屏幕方向限定符
+res/values-sw600dp-land/layouts.xml
+res/values-sw600dp-port/layouts.xml
+```
