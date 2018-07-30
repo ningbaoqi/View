@@ -21,7 +21,7 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/CollapsingToolbarLayout.gif)
 ### [使用Toast](https://github.com/ningbaoqi/View/commit/1cc81b17494dbec0588e07c74f34706770a480c6)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/toast.gif)
-### 使用SeekBar
+### [使用SeekBar](https://github.com/ningbaoqi/View/commit/7473ab0b3bc490a4beb1d6f3aa62ea956f67b7a7)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/seekbar.gif)
 ### 使用TimePicker
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/timepicker.gif)
