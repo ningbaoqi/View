@@ -82,6 +82,9 @@
 |`View getActiveView(int position)`|获取想要在屏幕上显示的View|
 |`void addScrapView(View scrap, int position)`|将废弃View进行缓存的方法|
 
+#### [ListView使用ArrayAdapter]()
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic-60.gif)
+
 ### ViewPager
 
 |FragmentPagerAdapter与FragmentStatePagerAdapter区别|
