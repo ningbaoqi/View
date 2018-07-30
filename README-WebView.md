@@ -61,6 +61,7 @@ stringBuilder.append("</html>");
 //加载并显示HTML代码
 webView.loadDataWithBaseURL(null, stringBuilder.toString(), "text/html", "utf-8", null);
 ```
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic-72.gif)
 
 ### 打造自己的浏览器
 ```
