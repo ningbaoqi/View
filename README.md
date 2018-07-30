@@ -36,7 +36,7 @@
 ### 使用ContextMenu
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/contextmenu.gif)
 ### 使用Spinner
-![image](https://github.com/ningbaoqi/View/blob/master/gif/spinner.gif)autocompletetextview.gif
+![image](https://github.com/ningbaoqi/View/blob/master/gif/spinner.gif)
 ### 使用AutoCompleteTextView
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/autocompletetextview.gif)
 ### 使用GridView
