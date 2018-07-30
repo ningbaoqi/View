@@ -80,3 +80,10 @@
 |`void fillActiveViews(int childCount, int firstActivePosition)`|根据参数将ListView中指定的元素存储到mActiveViews数组当中|
 |`View getActiveView(int position)`|获取想要在屏幕上显示的View|
 |`void addScrapView(View scrap, int position)`|将废弃View进行缓存的方法|
+
+### ViewPager
+
+|FragmentPagerAdapter与FragmentStatePagerAdapter区别|
+|------|
+|FragmentPagerAdapter：适合少量界面，方便滑动|
+|FragmentStatePagerAdapter：适合多个界面，类似于ListView原理，离开视线就会被回收|
