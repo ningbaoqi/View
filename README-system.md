@@ -23,7 +23,7 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/toast.gif)
 ### [使用SeekBar](https://github.com/ningbaoqi/View/commit/7473ab0b3bc490a4beb1d6f3aa62ea956f67b7a7)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/seekbar.gif)
-### 使用TimePicker
+### [使用TimePicker](https://github.com/ningbaoqi/View/commit/63259fe5caa7ace6e222ae8b3e1d50178b0de6cf)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/timepicker.gif)
 ### 使用ScrollView
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/scrollview.gif)
