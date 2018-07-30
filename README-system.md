@@ -49,7 +49,7 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/TimePickerDialog.gif)
 ### [使用ProgressBar](https://github.com/ningbaoqi/View/commit/da4578236ded40a96335d1c16778d5ecc637db09)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/progressbar.gif)
-### 使用MultiAutoCompleteTextView
+### [使用MultiAutoCompleteTextView](https://github.com/ningbaoqi/View/commit/d45babd87d1e0c9b8a6c35ffa4d98acae1b36957)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/MultiAutoCompleteTextView.gif)
 ### 跑马灯
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/marqueetext.gif)
