@@ -42,3 +42,46 @@ public class NotificationActivity extends AppCompatActivity {
      }
 }
 ```
+### Android8.0发送普通通知
+```
+public class MainActivity extends AppCompatActivity {
+    private NotificationManager manager;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        Button button = findViewById(R.id.bt1);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendNormalNotification();
+            }
+        });
+    }
+    private NotificationManager getManager() {
+        if (manager == null) {
+            manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        }
+        return manager;
+    }
+    private void sendNormalNotification() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            NotificationChannel channel = new NotificationChannel("channel_id", "channel_name", NotificationManager.IMPORTANCE_DEFAULT);//创建通知渠道
+            channel.canBypassDnd();//可否绕过请勿打扰模式
+            channel.enableLights(true);//闪光
+            channel.setLockscreenVisibility(VISIBILITY_SECRET);//锁屏显示通知
+            channel.setLightColor(Color.argb(100, 100, 100, 100));//指定闪光时的灯光颜色
+            channel.canShowBadge();//桌面launcher消息角标
+            channel.enableVibration(true);//是否可以震动
+            channel.getAudioAttributes();//获取系统通知响铃声音的配置
+            channel.getGroup();//获取通知渠道组
+            channel.setBypassDnd(true);//设置可以绕过，请勿打扰模式
+            channel.setVibrationPattern(new long[]{100, 100, 200});//震动的模式
+            channel.shouldShowLights();//是否会显示闪光
+            getManager().createNotificationChannel(channel);//让通知服务知道有这么个渠道
+        }
+        Notification notification = new Notification.Builder(this).setAutoCancel(true).setChannelId("channel_id").setContentTitle("新消息来了").setContentText("明天是周六不上班好开心").setSmallIcon(R.mipmap.ic_launcher).build();
+        getManager().notify(1, notification);
+    }
+}
+```
