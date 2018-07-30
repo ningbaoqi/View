@@ -39,3 +39,22 @@
       }
   }
 ```
+#### 解决方法二
+
+```
+/**
+  * 在Looper调用此runnable的时候，View已经初始化好了
+  */
+  @Override
+  protected void onStart() {
+      super.onStart();
+      recyclerView.post(new Runnable() {
+          @Override
+          public void run() {
+              int width = recyclerView.getMeasuredWidth();
+              int height = recyclerView.getMeasuredHeight();
+          }
+      });
+  }
+```
+
