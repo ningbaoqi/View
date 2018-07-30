@@ -35,3 +35,26 @@
          startActivity(intent);
      }
 ```
+### 使用WebView加载HTML代码
++ WebView提供了一个`loadData(String data , String mimeType , String encoding)`方法，该方法`可用于加载并显示HTML代码`，但在实际使用过程中`当它加载包含中文的HTML内容时`，`WebView将会显示乱码`；好在WebView提供了一个`loadDataWithBaseURL(String baseUrl , String data , String mimetype , String encoding , String historyUrl)`方法，该方法是loadData(String data , String mimetype , String encoding)方法的增强版，`它不会产生乱码`。关于该方法的几个参数简单说明如下：
+
+|参数|说明|
+|------|------|
+|`data`|`指定需要加载的HTML代码`|
+|`mimetype`|`指定HTML代码的MIME类型，对于HTML代码可指定为text/html`|
+|`encoding`|`指定HTML代码编码所用的字符集，比如指定为GBK`|
+
+```
+StringBuilder stringBuilder = new StringBuilder();
+stringBuilder.append("<html>");
+stringBuilder.append("<head>");
+stringBuilder.append("<title>欢迎您</title>");
+stringBuilder.append("</head>");
+stringBuilder.append("<body>");
+stringBuilder.append("<h2>欢迎您访问<a href=\"http://www.crazyit.org\">疯狂java联盟</a></h2>");
+stringBuilder.append("</body>");
+stringBuilder.append("</html>");
+//使用简单的loadData方法会导致乱码show.loadData(sb.toString(),"text/html" , "utf-8")
+//加载并显示HTML代码
+webView.loadDataWithBaseURL(null, stringBuilder.toString(), "text/html", "utf-8", null);
+```
