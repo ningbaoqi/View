@@ -1,6 +1,6 @@
-### [RemoteView](https://github.com/ningbaoqi/View/blob/master/README-RemoteView.md)
+### [RemoteViews](https://github.com/ningbaoqi/View/blob/master/README-RemoteView.md)
 ### [Notification](https://github.com/ningbaoqi/View/blob/master/README-Notification.md)
-### 使用CardView
+### [使用CardView](https://github.com/ningbaoqi/View/commit/c2d09c25e3190911d1b613c3f5046d36c73167b5)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/cardview.gif)
 ### 使用ToolBar
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/ToolBar.png)
