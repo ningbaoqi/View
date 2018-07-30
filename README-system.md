@@ -107,3 +107,5 @@
 ```
 #### [ViewPager使用PagerAdapter](https://github.com/ningbaoqi/View/commit/ca102b96be9ff5fa8b2fa9d3005ee0bb7f972d06)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/pic-63.gif)
+#### [ViewPager使用FragmentPagerAdapter](https://github.com/ningbaoqi/View/commit/3a941caa866d83c34808db2183a6ff1890826996)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic-64.gif)
