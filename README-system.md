@@ -51,7 +51,7 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/progressbar.gif)
 ### [使用MultiAutoCompleteTextView](https://github.com/ningbaoqi/View/commit/d45babd87d1e0c9b8a6c35ffa4d98acae1b36957)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/MultiAutoCompleteTextView.gif)
-### 跑马灯
+### [跑马灯](https://github.com/ningbaoqi/View/commit/47dd40a04800dbcaf513768d705744803fdf9e42)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/marqueetext.gif)
 ### 手势
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/guesture.gif)
