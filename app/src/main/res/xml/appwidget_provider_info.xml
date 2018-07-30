@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--initialLayout 初始化布局  updatePeriodMillis小部件自动更新周期单位ms-->
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/appwidget"
+    android:minHeight="84dp"
+    android:minWidth="84dp"
+    android:updatePeriodMillis="86400000" />
