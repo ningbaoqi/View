@@ -87,3 +87,17 @@
 |------|
 |FragmentPagerAdapter：适合少量界面，方便滑动|
 |FragmentStatePagerAdapter：适合多个界面，类似于ListView原理，离开视线就会被回收|
+
+#### 为ViewPager创建事件监听器
+```
+    viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+        @Override
+        public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {}
+        @Override
+        public void onPageSelected(int position) {
+            Toast.makeText(FragmentPagerAdapterActivity.this , titles.get(position) , Toast.LENGTH_LONG).show();
+        }
+        @Override
+        public void onPageScrollStateChanged(int state) {}
+    });
+```
