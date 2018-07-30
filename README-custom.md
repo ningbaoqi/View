@@ -226,3 +226,5 @@ public boolean onInterceptTouchEvent(MotionEvent ev) {
     }
 }
 ```
+### 自定义View的实例
+[自定义View的实例](https://github.com/ningbaoqi/View/blob/master/README-customview1.md)
