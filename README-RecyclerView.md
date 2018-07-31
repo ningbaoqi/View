@@ -44,3 +44,63 @@ public void removeData(int position) {
      notifyItemRemoved(position); 
 }
 ```
+#### Click and LongClick
+```
+class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyViewHolder> {
+
+        //...
+        public interface OnItemClickLitener {
+            void onItemClick(View view, int position);
+
+            void onItemLongClick(View view, int position);
+        }
+
+        private OnItemClickLitener mOnItemClickLitener;
+
+        public void setOnItemClickLitener(OnItemClickLitener mOnItemClickLitener) {
+            this.mOnItemClickLitener = mOnItemClickLitener;
+        }
+
+        @Override
+        public void onBindViewHolder(final MyViewHolder holder, final int position) {
+            holder.tv.setText(mDatas.get(position));
+
+            // 如果设置了回调，则设置点击事件
+            if (mOnItemClickLitener != null) {
+                holder.itemView.setOnClickListener(new OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        int pos = holder.getLayoutPosition();
+                        mOnItemClickLitener.onItemClick(holder.itemView, pos);
+                    }
+                });
+
+                holder.itemView.setOnLongClickListener(new OnLongClickListener() {
+                    @Override
+                    public boolean onLongClick(View v) {
+                        int pos = holder.getLayoutPosition();
+                        mOnItemClickLitener.onItemLongClick(holder.itemView, pos);
+                        return false;
+                    }
+                });
+            }
+        }
+    }
+
+
+mAdapter.setOnItemClickLitener(new OnItemClickLitener()
+        {            @Override
+            public void onItemClick(View view, int position)
+            {
+                Toast.makeText(HomeActivity.this, position + " click",
+                        Toast.LENGTH_SHORT).show();
+            }            @Override
+            public void onItemLongClick(View view, int position)
+            {
+                Toast.makeText(HomeActivity.this, position + " long click",
+                        Toast.LENGTH_SHORT).show();
+                        mAdapter.removeData(position);
+            }
+        });
+
+```
