@@ -105,6 +105,7 @@ mAdapter.setOnItemClickLitener(new OnItemClickLitener(){
 ### [RecyclerView处理不同类型的数据](https://github.com/ningbaoqi/View/commit/70d7c19ec10df883de84d78e18f4e7c6863ec0f8)
 + 在实际开发中因为从服务器上传递过来的数据的类型是不同的，所以会解析成多个JavaBean；现模拟三个数据类型；
 ### [RecyclerView实现ListView](https://github.com/ningbaoqi/View/commit/31daf9fd463d8bfefc8f835b409f575967b442b1)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic-81.gif)
 ### [RecyclerView实现GridView](https://github.com/ningbaoqi/View/commit/5e6b2b2743b78d23e9f384fdc851d66f144d94a1)
 ### [RecyclerView实现多个样式的列表](https://github.com/ningbaoqi/View/commit/12f0cbc2700d18114edecc7b5b31ff902cfe79ef)
 ### [RecyclerView实现网格布局ListView混排](https://github.com/ningbaoqi/View/commit/2183e2458751e615bd7a4bfe65b83efbaf76bf02)
