@@ -20,3 +20,10 @@ mRecyclerView.setItemAnimator(new DefaultItemAnimator());
 mRecyclerView.addItemDecoration(new DividerItemDecoration(getActivity(),DividerItemDecoration.HORIZONTAL_LIST));
 ```
 + `RecyclerView代表的意义是，我只管Recycler View，也就是说RecyclerView只管回收与复用View，其他的你可以自己去设置。可以看出其高度的解耦，给予你充分的定制自由`;
+#### LayoutManager
+
+|RecyclerView.LayoutManager实现类|说明|
+|------|------|
+|`LinearLayoutManager`|现行管理器，支持横向、纵向|
+|`GridLayoutManager`|网格布局管理器|
+|`StaggeredGridLayoutManager`|瀑布就式布局管理器|
