@@ -7,3 +7,16 @@
 |`ItemDecoration`|`控制Item间的间隔（可绘制）`|
 |`ItemAnimator`|`控制Item增删的动画`|
 |`请自己写`|`控制点击、长按事件`|
+
+```
+mRecyclerView = findView(R.id.id_recyclerview); 
+//设置布局管理器
+mRecyclerView.setLayoutManager(layout); 
+//设置adapter
+mRecyclerView.setAdapter(adapter) 
+//设置Item增加、移除动画
+mRecyclerView.setItemAnimator(new DefaultItemAnimator()); 
+//添加分割线
+mRecyclerView.addItemDecoration(new DividerItemDecoration(                getActivity(),DividerItemDecoration.HORIZONTAL_LIST));
+```
++ `RecyclerView代表的意义是，我只管Recycler View，也就是说RecyclerView只管回收与复用View，其他的你可以自己去设置。可以看出其高度的解耦，给予你充分的定制自由`;
