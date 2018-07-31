@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/listview"
+        android:orderInCategory="100"
+        android:title="listview"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/gridview"
+        android:orderInCategory="100"
+        android:title="gridview"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/hori_gridview"
+        android:orderInCategory="100"
+        android:title="hori_gridview"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_stagger"
+        android:orderInCategory="100"
+        android:title="action_stagger"
+        app:showAsAction="never" />
+</menu>
