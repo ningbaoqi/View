@@ -9,7 +9,7 @@
 
 |RecyclerView中的关键成员|说明|
 |------|------|
-|`Type` : `getItemViewType(int position)`|`ItemType保存在Holder中；Holder根据position被缓存到换存池中，当需要复用的时候，系统会在缓存池里面拿到holder，进而实现使用流畅`；`遍历缓存中的Holder，如果Type一致就返回当前的holder`|
+|`getItemViewType(int position)`|`ItemType保存在Holder中；Holder根据position被缓存到换存池中，当需要复用的时候，系统会在缓存池里面拿到holder，进而实现使用流畅`；`遍历缓存中的Holder，如果Type一致就返回当前的holder`|
 |`RecyclerView.Hodler`|`在RecyclerView中保存View的单位`；ListView里面保存的是View，而RecyclerView保存的是Holder，这是他们两个的区别；Holder记录在RecyclerView中的基本信息；Holder中还有是否需要被缓存的Flag标志；`RecyclerView的缓存单位是Holder而不再是View`|
 |`RecyclerView.Recycler`|`保存了一些缓存的机制可以类比为convertView`,RecyclerView缓存Holder；Holder保存在map中，map放在Recycler内部类中；多个RecyclerView公用一个缓存池RecycleredPool是一个静态成员变量，`缓存池中的key是一个Type，所以根据Type去找到Holder`；配置缓存size|
 
