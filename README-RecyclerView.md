@@ -88,19 +88,16 @@ class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyViewHolder> {
     }
 
 
-mAdapter.setOnItemClickLitener(new OnItemClickLitener()
-        {            @Override
-            public void onItemClick(View view, int position)
-            {
-                Toast.makeText(HomeActivity.this, position + " click",
-                        Toast.LENGTH_SHORT).show();
-            }            @Override
-            public void onItemLongClick(View view, int position)
-            {
-                Toast.makeText(HomeActivity.this, position + " long click",
-                        Toast.LENGTH_SHORT).show();
-                        mAdapter.removeData(position);
-            }
-        });
+mAdapter.setOnItemClickLitener(new OnItemClickLitener(){            
+    @Override
+    public void onItemClick(View view, int position){
+          Toast.makeText(HomeActivity.this, position + " click",Toast.LENGTH_SHORT).show();
+    }            
+    @Override
+    public void onItemLongClick(View view, int position){
+          Toast.makeText(HomeActivity.this, position + " long click",Toast.LENGTH_SHORT).show();
+          mAdapter.removeData(position);
+    }
+});
 
 ```
