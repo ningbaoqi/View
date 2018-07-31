@@ -14,3 +14,4 @@
 |`RecyclerView.Recycler`|`保存了一些缓存的机制可以类比为convertView`,RecyclerView缓存Holder；Holder保存在map中，map放在Recycler内部类中；多个RecyclerView公用一个缓存池RecycleredPool是一个静态成员变量，`缓存池中的key是一个Type，所以根据Type去找到Holder`；配置缓存size|
 
 #### 多重布局的设计流程
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic-83.jpg)
