@@ -33,3 +33,14 @@ mRecyclerView.addItemDecoration(new DividerItemDecoration(getActivity(),DividerI
 // 设置item动画 
 mRecyclerView.setItemAnimator(new DefaultItemAnimator());
 ```
+#### 更新数据集
+```
+public void addData(int position) {
+     mDatas.add(position, "Insert One");
+     notifyItemInserted(position); 
+} 
+public void removeData(int position) {
+     mDatas.remove(position);
+     notifyItemRemoved(position); 
+}
+```
