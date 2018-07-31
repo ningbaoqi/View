@@ -108,3 +108,5 @@ mAdapter.setOnItemClickLitener(new OnItemClickLitener(){
 ### [RecyclerView实现GridView](https://github.com/ningbaoqi/View/commit/5e6b2b2743b78d23e9f384fdc851d66f144d94a1)
 ### [RecyclerView实现多个样式的列表](https://github.com/ningbaoqi/View/commit/12f0cbc2700d18114edecc7b5b31ff902cfe79ef)
 ### [RecyclerView实现网格布局ListView混排](https://github.com/ningbaoqi/View/commit/2183e2458751e615bd7a4bfe65b83efbaf76bf02)
+### [RecyclerView实现瀑布流](https://github.com/ningbaoqi/View/commit/7ecccf9440323c74c35dab21549a44aa764d2a31)
+
