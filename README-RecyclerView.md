@@ -27,3 +27,9 @@ mRecyclerView.addItemDecoration(new DividerItemDecoration(getActivity(),DividerI
 |`LinearLayoutManager`|现行管理器，支持横向、纵向|
 |`GridLayoutManager`|网格布局管理器|
 |`StaggeredGridLayoutManager`|瀑布就式布局管理器|
+
+#### ItemAnimator设置选项动画
+```
+// 设置item动画 
+mRecyclerView.setItemAnimator(new DefaultItemAnimator());
+```
