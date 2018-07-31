@@ -101,3 +101,4 @@ mAdapter.setOnItemClickLitener(new OnItemClickLitener(){
 });
 
 ```
+### [RecyclerView实现复杂布局原理](https://github.com/ningbaoqi/View/blob/master/README-rec1.md)
