@@ -6,3 +6,13 @@
 |获取Matrix对象，该Matrix对象即可新创建，也可直接获取其他对象内封装的Matrix（例如Transformation对象内部就封装了Matrix）|
 |调用Matrix的方法进行平移、旋转、缩放、倾斜等|
 |将程序对Matrix所做的变换应用到指定图形或组件|
+
+|Matrix提供方法|说明|
+|------|------|
+|setTranslate(float dx , float dy)|控制Matrix进行平移|
+|setSkew(float kx , float ky , float px , float py)|控制Matrix以px、py为轴心进行倾斜，kx、ky为X、Y方向上的倾斜距离|
+|setSkew(float kx , float ky)|控制Matrix进行倾斜，kx、ky为X、Y方向上的倾斜距离|
+|setRotate(float degress)|控制Matrix进行旋转，degress控制旋转的角度|
+|setRotate(float degress , float px , float py)|设置以px、py为轴心进行旋转，degress控制旋转的角度|
+|setScale(float sx , float sy)|设置Matrix进行缩放，sx、sy控制X、Y方向上的缩放比例|
+|setScale(float sx , float sy , float px , float py)|设置Matrix以px、py为轴心进行缩放，sx、sy控制X、Y方向上的缩放比例|
