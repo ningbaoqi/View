@@ -8,3 +8,5 @@
 [系统控件](https://github.com/ningbaoqi/View/blob/master/README-system.md)
 ### 屏幕适配
 [屏幕适配](https://github.com/ningbaoqi/View/blob/master/README-adapter.md)
+### 图片加载框架
+[图片加载框架](https://github.com/ningbaoqi/View/blob/master/README-kuangjia.md)
