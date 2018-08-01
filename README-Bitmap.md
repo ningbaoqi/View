@@ -23,3 +23,14 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-30.jpg)
 ### [撕衣服](https://github.com/ningbaoqi/View/commit/b1edb672bc3487564a1b0f280425a07c9e8edbcb)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-31.jpg)
+
+### 缩放加载大图片
+
+|图像原理|
+|------|
+|图片的大小 = 图片的像素 * 每个像素占用的大小|
+|加载大图片时：计算机把所有像素信息解析出来保存到内存，并不是图片多大就多大，一个 2400`*`3200像素的jpg图片，因为Android在内存中保存图片是使用ARGB保存，所以一个像素占用4个字节，所以在加载的时候需要 2400`*`3200`*`4/1024/1024M大小的内存|
+
+```
+
+```
