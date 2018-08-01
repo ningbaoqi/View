@@ -15,3 +15,5 @@
 |canvas.drawLine(startX,startY,stopX,stopY,paint)|表示从点startＸ，startＹ到点stopＸ，stopＹ画一条直线|
 |canvas.drawArc(RectF,float startAngle,float sweepAngle,Ｂoolean useCenter,Ｐaint paint)|第一个参数是圆弧的显示区域；startAngle圆弧起始角度，sweepAngle圆弧度数，3点钟方向为0度，useCenter设置是否显示圆心|
 |canvas.drawCircle(float , float , float , Paint)|用于绘制圆，前两个参数表示圆心坐标，第三个参数表示圆的半径|
+|save()|锁定需要操作的对象|
+|restore()|解除锁定|
