@@ -22,11 +22,11 @@
 
 + 一旦对Matrix进行了变换，接下来就可应用该Matrix对图形进行控制了，例如：Canvas就提供了一个drawBitmap(Bitmap bitmap , Matrix matrix , Paint paint)方法，调用该方法就可以在绘制Bitmap时应用Matrix上的变换；
 
-image1
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-12.jpg)
 
 + 借助于Bitmap的createBitmap方法可以挖取源位图的其中一块，这样可以在程序中通过定时器控制不断的挖取源位图不同位置的块，从而给用户看到背景移动的假象；
 
-image2
-image3
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-13.jpg)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-14.jpg)
 
 + 其中注意跟图片的大小有关，该背景图片的分辨率为626*903；
