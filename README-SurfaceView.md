@@ -11,3 +11,6 @@
 |方法|说明|
 |------|------|
 |unlockCanvasAndPost(canvas)|当调用该方法之后，该方法之前所绘制的图形还处于缓冲区中，下一次lockCanvas()方法锁定的区域可能会遮挡它|
+
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-20.jpg)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-21.jpg)
