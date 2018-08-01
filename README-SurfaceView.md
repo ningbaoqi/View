@@ -21,3 +21,14 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-22.jpg)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-23.jpg)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-24.jpg)
+
+### 使用SurfaceView实现动画
++ 虽然前面大量的介绍接使用自定义的View来进行绘制，但View的绘图机制存在如下缺陷：
+
+|缺陷|
+|------|
+|View缺乏双缓冲机制|
+|当程序需要更新View上的图片时，程序必须重绘View上显示的整张图片|
+|新线程无法直接更新View组件|
+
++ 由于View存在上述缺陷，所以通过自定义View来实现绘制，尤其在游戏中的绘图时性能并不好，Android提供了一个SurfaceView来代替View，在实现游戏绘图方面，SurfaceView比View更加出色，因此一般推荐使用SurfaceView；
