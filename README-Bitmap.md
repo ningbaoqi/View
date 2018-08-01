@@ -21,3 +21,5 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-29.jpg)
 ### [画画板](https://github.com/ningbaoqi/View/commit/4c140b1409c6b1b2e2bfb2ecff882ae60d39b1b1)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-30.jpg)
+### [撕衣服](https://github.com/ningbaoqi/View/commit/b1edb672bc3487564a1b0f280425a07c9e8edbcb)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-31.jpg)
