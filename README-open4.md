@@ -44,3 +44,20 @@ GLUtils.texImage2D(GL10.GL_TEXTURE_2D , 0 , bitmap , 0);
 |设置贴图坐标的数组信息|
 |调用GL10的glBindTexture(int target , int texture)方法执行贴图|
 
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-80.jpg)
+
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-81.jpg)
+
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-82.jpg)
+
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-83.jpg)
+
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-84.jpg)
+
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-85.jpg)
+
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-86.jpg)
+
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-87.jpg)
+
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-88.jpg)
