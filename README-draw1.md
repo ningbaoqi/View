@@ -12,3 +12,5 @@
 [Matrix](https://github.com/ningbaoqi/View/blob/master/README-Matrix.md)
 ### BitmapFactory
 [BitmapFactory](https://github.com/ningbaoqi/View/blob/master/README-BitmapFactory.md)
+### Path
+[Path](https://github.com/ningbaoqi/View/blob/master/README-Path.md)
