@@ -9,10 +9,13 @@
 
 |Matrix提供方法|说明|
 |------|------|
+|void reset()|重置一个matrix对象|
+|void set(Matrix src)|复制一个源矩阵|
+|void isIdentity()|返回这个矩阵是否定义(已经有意义)|
 |setTranslate(float dx , float dy)|控制Matrix进行平移|
 |setSkew(float kx , float ky , float px , float py)|控制Matrix以px、py为轴心进行倾斜，kx、ky为X、Y方向上的倾斜距离|
 |setSkew(float kx , float ky)|控制Matrix进行倾斜，kx、ky为X、Y方向上的倾斜距离|
-|setRotate(float degress)|控制Matrix进行旋转，degress控制旋转的角度|
-|setRotate(float degress , float px , float py)|设置以px、py为轴心进行旋转，degress控制旋转的角度|
+|setRotate(float degress)|控制Matrix进行旋转，degress控制旋转的角度，原点为(0,0)|
+|setRotate(float degress , float px , float py)|设置以(px、py)为轴心进行旋转，degress控制旋转的角度|
 |setScale(float sx , float sy)|设置Matrix进行缩放，sx、sy控制X、Y方向上的缩放比例|
 |setScale(float sx , float sy , float px , float py)|设置Matrix以px、py为轴心进行缩放，sx、sy控制X、Y方向上的缩放比例|
