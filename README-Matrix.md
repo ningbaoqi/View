@@ -48,3 +48,5 @@ matrix.setScale(1, -1);
 matrix.postTranslate(0, bitmapCopy.getWidth());
 canvas.drawBitmap(bitmapSrc, matrix, paint);
 ```
+
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-28.jpg)
