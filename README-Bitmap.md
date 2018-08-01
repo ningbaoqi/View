@@ -19,3 +19,5 @@
 
 ### [创建图片副本并添加简单特效](https://github.com/ningbaoqi/View/commit/ddc80446f38e874ce7f700af22268fa88e00eb44)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-29.jpg)
+### [画画板](https://github.com/ningbaoqi/View/commit/4c140b1409c6b1b2e2bfb2ecff882ae60d39b1b1)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-30.jpg)
