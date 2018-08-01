@@ -28,3 +28,6 @@
 |verts|该参数是一个长度为（meshWidth + 1）\*（meshHeight + 1）\*2的数组，它记录了扭曲后的位图各顶点位置，虽然它是一个一维数组，但实际上它记录的数据是形如(x0,y0)、(x1 , y1)....、(xN , yN)格式的数据，这些数组元素控制对bitmap位图的扭曲效果|
 |vertOffset|控制verts数组中从第几个数组元素开始对bitmap进行扭曲（忽略vertOffset之前的数据的扭曲效果）|
 
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-25.jpg)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-26.jpg)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-27.jpg)
