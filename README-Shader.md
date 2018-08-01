@@ -8,3 +8,12 @@
 |RadialGradient|使用圆形渐变来填充图形|
 |SweepGradient|使用角度渐变来填充图形|
 |ComposeShader|使用组合渲染效果来填充图形|
+
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-4.jpg)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-5.jpg)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-6.jpg)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-7.jpg)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-8.jpg)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-9.jpg)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-10.jpg)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-11.jpg)
