@@ -10,3 +10,5 @@
 [矩形区域RectF](https://github.com/ningbaoqi/View/blob/master/README-RectF.md)
 ### Matrix
 [Matrix](https://github.com/ningbaoqi/View/blob/master/README-Matrix.md)
+### BitmapFactory
+[BitmapFactory](https://github.com/ningbaoqi/View/blob/master/README-BitmapFactory.md)
