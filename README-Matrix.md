@@ -19,3 +19,8 @@
 |setRotate(float degress , float px , float py)|设置以(px、py)为轴心进行旋转，degress控制旋转的角度|
 |setScale(float sx , float sy)|设置Matrix进行缩放，sx、sy控制X、Y方向上的缩放比例|
 |setScale(float sx , float sy , float px , float py)|设置Matrix以px、py为轴心进行缩放，sx、sy控制X、Y方向上的缩放比例|
+
++ 一旦对Matrix进行了变换，接下来就可应用该Matrix对图形进行控制了，例如：Canvas就提供了一个drawBitmap(Bitmap bitmap , Matrix matrix , Paint paint)方法，调用该方法就可以在绘制Bitmap时应用Matrix上的变换；
+
+image1
+
