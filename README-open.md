@@ -76,3 +76,5 @@ public void onDrawFrame(GL10 gl){
 ### [旋转](https://github.com/ningbaoqi/View/blob/master/README-open2.md)
 
 ### [构建3D图形](https://github.com/ningbaoqi/View/blob/master/README-open3.md)
+
+### [应用纹理贴图](https://github.com/ningbaoqi/View/blob/master/README-open4.md)
