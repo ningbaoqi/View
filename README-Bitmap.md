@@ -32,5 +32,43 @@
 |加载大图片时：计算机把所有像素信息解析出来保存到内存，并不是图片多大就多大，一个 2400`*`3200像素的jpg图片，因为Android在内存中保存图片是使用ARGB保存，所以一个像素占用4个字节，所以在加载的时候需要 2400`*`3200`*`4/1024/1024M大小的内存|
 
 ```
-
+ public void large(View view) {
+        /**
+         * 解析图片时需要使用到的参数都需要封装在 options 对象中
+         * */
+        BitmapFactory.Options options = new BitmapFactory.Options();
+        /**
+         * 将 options.inJustDecodeBounds 设置为true时，不会返回bitmap，而是返回一个null，但是会将图片的数据解析出来，放在options中
+         * */
+        options.inJustDecodeBounds = true;
+        BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher, options);
+        int imageWidth = options.outWidth;
+        int imageHeight = options.outHeight;
+        /**
+         * 获取手机的宽高
+         * */
+        Display display = getWindowManager().getDefaultDisplay();
+        int screenWidth = display.getWidth();
+        int screenHeight = display.getHeight();
+        /**
+         * 使用大的缩放比例，会产生宽或高之一像素不够的问题
+         * 使用小的缩放比例，会产生解析的图片占用内存大的问题，需要根据需要选择
+         * */
+        int scale = 1;
+        int scaleWidth = imageWidth / screenWidth;
+        int scaleHeight = imageHeight / screenHeight;
+        if (scaleWidth >= scaleHeight && scaleWidth >= 1) {
+            scale = scaleWidth;
+        } else if (scaleWidth < scaleHeight && scaleHeight >= 1) {
+            scale = scaleHeight;
+        }
+       /**
+         * 设置缩放比例
+         * */
+        options.inSampleSize = scale;
+        options.inJustDecodeBounds = false;
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher, options);
+        ImageView imageView = (ImageView) findViewById(R.id.large);
+        imageView.setImageBitmap(bitmap);
+    }
 ```
