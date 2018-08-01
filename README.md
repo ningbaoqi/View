@@ -10,3 +10,5 @@
 [屏幕适配](https://github.com/ningbaoqi/View/blob/master/README-adapter.md)
 ### 图片加载框架
 [图片加载框架](https://github.com/ningbaoqi/View/blob/master/README-kuangjia.md)
+### 缓存
+[缓存](https://github.com/ningbaoqi/View/blob/master/README-cache.md)
