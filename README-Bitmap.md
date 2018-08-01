@@ -16,3 +16,6 @@
 #### 二、LRU
 + `LRU算法主要在存储Bitmap三级缓存来使用`；`最近最少使用的对象，从队列中清除出去`；内部由`LinkedHashMap`实现的，提供了`get和put方法`，当缓存满了的时候`LRU算法提供的trimToSize方法把较早的缓存对象移除，添加新的缓存对象`；
 #### 三、计算isSampleSize缩放比例
+
+### [创建图片副本并添加简单特效](https://github.com/ningbaoqi/View/commit/ddc80446f38e874ce7f700af22268fa88e00eb44)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-29.jpg)
