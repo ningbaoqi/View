@@ -74,3 +74,5 @@ public void onDrawFrame(GL10 gl){
 ### [绘制平面上的多边形](https://github.com/ningbaoqi/View/blob/master/README-open1.md)
 
 ### [旋转](https://github.com/ningbaoqi/View/blob/master/README-open2.md)
+
+### [构建3D图形](https://github.com/ningbaoqi/View/blob/master/README-open3.md)
