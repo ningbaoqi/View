@@ -14,3 +14,5 @@
 [BitmapFactory](https://github.com/ningbaoqi/View/blob/master/README-BitmapFactory.md)
 ### Path
 [Path](https://github.com/ningbaoqi/View/blob/master/README-Path.md)
+### Shader
+[Shader](https://github.com/ningbaoqi/View/blob/master/README-Shader.md)
