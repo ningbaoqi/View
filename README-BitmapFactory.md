@@ -11,3 +11,5 @@
 |static Bitmap decodeResource(Resources res , int id)|从Android的APK文件资源中的创建方法|
 |static Bitmap decodeResource(Resources res ,int id , BitmapFactory.Options opts)|从Android的APK文件资源中的创建方法|
 |static Bitmap decodeResource(Resources res,ＴypedValue value,InputStream is ,Rect pad,BitmapFactory.Options opts)|从Android的APK文件资源中的创建方法|
+|static Bitmap decodeStream(InputStream is)|从一个输入流中的创建方法|
+|static Bitmap decodeStream(InputStream is , Rect outPadding , BitmapFactory.Options opts)|从一个输入流中的创建方法|
