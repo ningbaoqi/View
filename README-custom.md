@@ -226,5 +226,7 @@ public boolean onInterceptTouchEvent(MotionEvent ev) {
     }
 }
 ```
+### 绘制图像
+[绘制图像](https://github.com/ningbaoqi/View/blob/master/README-draw.md)
 ### 自定义View的实例
 [自定义View的实例](https://github.com/ningbaoqi/View/blob/master/README-customview1.md)
