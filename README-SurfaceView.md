@@ -14,3 +14,10 @@
 
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-20.jpg)
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-21.jpg)
+
+### 基于SurfaceView开发示波器
++ SurfaceView与普通View还有一个重要的区别，View的绘图必须在当前UI线程中进行，但SurfaceView就不会存在这个问题，因此SurfaceView的绘图是由SurfaceHolder来完成的；SurfaceHolder会启动新的线程去更新SurfaceView的绘制，因此不会阻塞主UI线程；
+
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-22.jpg)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-23.jpg)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-24.jpg)
