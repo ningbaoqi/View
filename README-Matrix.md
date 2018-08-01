@@ -30,3 +30,21 @@
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-14.jpg)
 
 + 其中注意跟图片的大小有关，该背景图片的分辨率为626*903；
+
+### 使用矩阵实现简单特效
+
+```
+Matrix matrix = new Matrix();
+/**
+* 使用矩阵添加特效
+* */
+//matrix.setTranslate(30, 50);平移
+//matrix.setScale(0.6f, 0.8f);缩放
+//matrix.setRotate(45f);旋转
+/**
+* 倒影
+* */
+matrix.setScale(1, -1);
+matrix.postTranslate(0, bitmapCopy.getWidth());
+canvas.drawBitmap(bitmapSrc, matrix, paint);
+```
