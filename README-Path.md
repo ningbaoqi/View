@@ -63,3 +63,6 @@ public class MainActivity extends AppCompatActivity {
 ![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-1.jpg)
 
 + 当定义`DashPathEffect、PathDashPathEffect时可指定一个phase参数`，`该参数用于指定路径效果的相位`，`当该phase参数发生改变时，绘制效果也略有变化，上面的程序不停的改变phase参数，并不停的重绘该View组件，这将产生动画效果`；除此之外，Android的`Canvas还提供了一个drawTextOnPath(String text , Path path , float hOffset , float vOffset , Paint paint)方法，该方法可以沿着Path绘制文本，其中hOffset参数指定水平偏移，vOffset参数指定垂直偏移`：
+
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-2.jpg)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-3.jpg)
