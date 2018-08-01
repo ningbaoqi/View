@@ -10,20 +10,20 @@
 |调用GL10的glDrawArrays(int mode , int first , int count)方法绘制平面，该方法的第一个参数指定绘制图形类型，第二个参数指定从哪个顶点开始绘制，第三个参数指定总会绘制的顶点数量|
 |绘制完成后，调用GL10的glFinish()方法结束绘制，并调用glDisableClientState(int)方法来停用顶点坐标数据、顶点颜色数据|
 
-![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-50.gif)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-50.jpg)
 
-![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-51.gif)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-51.jpg)
 
-![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-52.gif)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-52.jpg)
 
-![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-53.gif)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-53.jpg)
 
-![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-54.gif)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-54.jpg)
 
-![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-55.gif)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-55.jpg)
 
-![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-56.gif)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-56.jpg)
 
-![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-57.gif)
+![image](https://github.com/ningbaoqi/View/blob/master/gif/pic1-57.jpg)
 
 + 当调用glDrawArrays()方法时，如果将mode参数指定为GL10.GL_TRIANGLES，则绘制简单的三角形，如果将mode参数指定为GL10.GL_TRIANGLE_STRIP，那么系统将会沿着给出的顶点数据来绘制三角形；
