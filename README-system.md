@@ -1,6 +1,7 @@
 ### [RemoteViews](https://github.com/ningbaoqi/View/blob/master/README-RemoteView.md)
 ### [Notification](https://github.com/ningbaoqi/View/blob/master/README-Notification.md)
 ### [WebView](https://github.com/ningbaoqi/View/blob/master/README-WebView.md)
+### [VideoView](https://github.com/ningbaoqi/View/blob/master/README-VideoView.md)
 ### [RecyclerView](https://github.com/ningbaoqi/View/blob/master/README-RecyclerView.md)
 ### [SurfaceView](https://github.com/ningbaoqi/View/blob/master/README-SurfaceView.md)
 ### [使用CardView](https://github.com/ningbaoqi/View/commit/c2d09c25e3190911d1b613c3f5046d36c73167b5)
