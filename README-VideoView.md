@@ -43,3 +43,5 @@ public class VideoViewActivity extends AppCompatActivity {
          android:layout_height="match_parent" />
  </LinearLayout>
 ```
+
+![image](https://github.com/ningbaoqi/View/blob/master/gif/video.jpg)
